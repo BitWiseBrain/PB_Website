@@ -5,6 +5,11 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/server/utils";
 
+/**
+ * @param {Object} props
+ * @param {string[]} [props.slides]
+ * @param {string} [props.className]
+ */
 
 export default function Carousel({ slides = [], className = "" }) {
  const images = Array.isArray(slides) ? slides : [];
